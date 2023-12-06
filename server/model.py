@@ -52,5 +52,5 @@ model.fit(train_images,train_labels,epochs=11,validation_data=(test_images,test_
 loss,accuracy=model.evaluate(test_images,test_labels)
 print(f"Loss:{loss},accuracy:{accuracy}")
 
-model.save('image_classifier.model')
+model.save('../server/image_classifier.model')
 

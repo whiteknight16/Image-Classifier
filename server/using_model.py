@@ -20,7 +20,7 @@ def modelCall():
         img_array = np.array(img) / 255.0  # Convert the image to a numpy array and scale the pixel values
 
         class_names=['Plane','Car','Bird','Cat','Deer','Dog','Frog','Horse','Ship','Truck']
-        model = models.load_model("image_classifier.model")
+        model = models.load_model("../server/image_classifier.model")
 
         prediction=model.predict(np.array([img_array]))
         index=np.argmax(prediction) #argmax give index of highest value
